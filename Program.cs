@@ -67,7 +67,7 @@ namespace WebSocketServer
                 string browserSent = GetDecodedData(buffer, i);
                 Console.WriteLine("BrowserSent2: " + browserSent);
 
-                Console.WriteLine("=====================");
+                Console.WriteLine("========================");
                 //now send message to client
                 client.Send(GetFrameFromString("This is message from server to client."));
                 //System.Threading.Thread.Sleep(10000);//wait for message to be sent
